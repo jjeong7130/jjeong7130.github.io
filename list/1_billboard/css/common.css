@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+/*common.css*/
+
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+ul,ol,li {  list-style: none; margin: 0; padding: 0; }
+
+@media (max-width:599px) {
+
+
+  #wrap { width: 100%;   margin: 0 auto; display: flex; flex-flow: column wrap;}
+
+  #scroll_bar {position:fixed; bottom:50px; right:50px; cursor:pointer;
+    width:50px; height:50px; background:#9233e2; border:2px solid #fff; border-radius:25px; opacity:0.5;
+    transition:all 0.3s ease-in-out; z-index: 10;}
+    #scroll_bar i {width:100%; height:100%; font-size:1.5rem; color:#fff;
+      display:flex; justify-content:center; align-items:center;}
+    #scroll_bar:hover {opacity:1;}
+
+  header {  width: 100%; height: 120px; display: flex; margin: 20px auto 0 auto;
+             flex-flow: row wrap; justify-content: center; position: absolute; top: 0; left: 0;
+             z-index: 3; }
+  .headerbox { width: 96%; height: auto; display: flex;
+                flex-flow:  row wrap; align-items: center;  margin: 10px  auto; justify-content: space-between;}
+  #logo {  width: 150px; height: 100px; display: flex; }
+  #logo img { width: 150px; height: 100px; display: flex;}
+
+  .a {  display: block; cursor: pointer;}
+
+  .anav {  width: 100%; height: 200px; display: none; flex-flow: row wrap; margin: 10px 0 0 0px;
+            align-items: center; justify-content:center;  background-image: linear-gradient(180deg, #440281,#0368af ); }
+  .anav ul { width: 100%; display: flex; flex-flow: row wrap; justify-content: space-around;}
+  .anav ul a {  display: flex;  justify-content: space-around;}
+  .anav li:first-of-type {width:10px; border-bottom:10px solid #3fd5f0;
+    border-left:10px solid transparent; border-right:10px solid transparent;}
+  .anav li { width: 100%; background: ; display:block; padding:5px 0;}
+  .anav li a {  text-decoration: none; color: #fff; font-weight: bold; }
+  .anav li a:hover { color: #3fd5f0;}
+
+  .bnav { display: none;}
+
+  footer {  width: 100%; height: 420px; display: flex; background-color: #020d2c;
+            margin: 0 auto; justify-content: center; }
+  footer #footerbox  {  width: 95%; height:auto; display: flex; margin: 0 auto;
+                         flex-flow: column wrap; justify-content:center;
+                         align-items:center;}
+
+  footer #footerbox .flogo { width:50%; height: 140px; display: flex;
+                            align-items: center; justify-content: center;}
+
+  footer #footerbox .flogo img {width: 150px; height: 100px; }
+
+  footer #footerbox .fli {  width:100%; height:auto; display: flex; margin: 0 auto;
+                            flex-flow:row wrap; align-content:space-around;  justify-content: center;
+                            padding:20px 0 30px;}
+
+  footer #footerbox .fli ul {width:100%;  display: flex; justify-content: center;
+                              margin-bottom:10px;}
+
+  footer #footerbox .fli ul li { width:100%; height: 35px; display: flex; color: #aca9b1; justify-content: center;}
+
+  footer #footerbox .fli ul li a{ color: #aca9b1; font-size: 15px;font-weight: bold;}
+
+  footer #footerbox .fli p { color:#58465d; font-size: 13px; text-align: center; }
+
+  footer #footerbox .ficon { width:250px; height: 50px; display: flex;
+                              margin: 0 auto; justify-content: space-around; align-items: center;}
+
+  footer #footerbox .ficon img{ width:30px; height: 30px;}
+
+
+}
+
+@media (min-width:600px) {
+
+
+  #wrap { width: 100%;   margin: 0 auto; display: flex; flex-flow: column wrap;}
+
+  #scroll_bar {position:fixed; bottom:50px; right:50px; cursor:pointer;
+    width:50px; height:50px; background:#9233e2; border:2px solid #fff; border-radius:25px; opacity:0.5;
+    transition:all 0.3s ease-in-out;  z-index: 10;}
+    #scroll_bar i {width:100%; height:100%; font-size:1.5rem; color:#fff;
+      display:flex; justify-content:center; align-items:center;}
+    #scroll_bar:hover {opacity:1;}
+
+  header {  width: 100%; height: auto; display: flex; margin: 30px auto 0 auto; justify-content: center;
+           flex-flow: row wrap;  position: absolute; top: 0; left: 0; z-index: 3;}
+  .headerbox { width: 92%; height: auto; display: flex;
+                flex-flow: row wrap; align-items: center;  margin: 0  auto; justify-content: space-between;}
+  #logo {  width: 150px; height: 100px; display: flex; }
+  #logo img { width: 150px; height: 100px; display: flex;}
+
+  .a {  cursor: pointer;}
+
+  .anav {  width: 100%; height: 200px; display: none; flex-flow: row wrap; margin: 10px 0 0 0px;
+            align-items: center; justify-content:center;  background-image: linear-gradient(180deg, #440281,#0368af ); }
+  .anav ul { width: 100%; display: flex; flex-flow: row wrap; justify-content: space-around;}
+  .anav ul a {  display: flex;  justify-content: space-around;}
+  .anav li:first-of-type {width:10px; border-bottom:10px solid #3fd5f0;
+    border-left:10px solid transparent; border-right:10px solid transparent;}
+  .anav li { width: 100%; background: ; display:block; padding:5px 0;}
+  .anav li a {  text-decoration: none; color: #fff; font-weight: bold; }
+  .anav li a:hover { color: #3fd5f0;}
+
+  .bnav { display: none;}
+
+  footer {  width: 100%; height: 380px; display: flex; background-color: #020d2c;
+            margin: 0 auto; justify-content: center;}
+  footer #footerbox  {   width: 95%; height: 380px; display: flex; margin: 0 auto;
+                         flex-flow: column wrap;justify-content:center; }
+
+  footer #footerbox .flogo { width:50%; height: 140px; display: flex;  margin: 0 auto;
+                            align-items: center; justify-content: center;}
+
+  footer #footerbox .flogo img {width: 150px; height: 100px; display: flex; }
+
+  footer #footerbox .fli {  width:95%; height: 90px; display: flex; margin: 0 auto;
+                            flex-direction: column; align-items: center;  justify-content: center;}
+
+  footer #footerbox .fli ul {  width:70%;  display: flex; justify-content: center;}
+
+  footer #footerbox .fli ul li { width:100%; height: 35px; display: flex; color: #aca9b1; justify-content: center;}
+
+  footer #footerbox .fli ul li a{ color: #aca9b1; font-size: 15px;font-weight: bold;}
+
+  footer #footerbox .fli p { color:#58465d; font-size: 13px;text-align: center; }
+
+  footer #footerbox .ficon { width:250px; height: 50px; display: flex;
+                              margin: 0 auto; justify-content: space-around; align-items: center;}
+
+  footer #footerbox .ficon img{ width:30px; height: 30px;}
+
+
+}
+
+
+@media (min-width:700px) {
+
+
+  #wrap { width: 100%;   margin: 0 auto; display: flex; flex-flow: column wrap;}
+
+  #scroll_bar {position:fixed; bottom:50px; right:50px; cursor:pointer;
+    width:50px; height:50px; background:#9233e2; border:2px solid #fff; border-radius:25px; opacity:0.5;
+    transition:all 0.3s ease-in-out;  z-index: 10;}
+    #scroll_bar i {width:100%; height:100%; font-size:1.5rem; color:#fff;
+      display:flex; justify-content:center; align-items:center;}
+    #scroll_bar:hover {opacity:1;}
+
+  header {  width: 100%; height: 160px; display: flex; flex-flow: row wrap;
+            margin: 0 auto; justify-content: center; position: absolute; top: 0; left: 0;
+             z-index: 3;}
+  .headerbox { width: 92%; height: 160px; display: flex; flex-flow: row wrap;
+                flex-direction: row; align-items: center;  margin: 0  auto; justify-content: space-between;}
+  #logo {  width: 150px; height: 100px; display: flex; }
+  #logo img { width: 150px; height: 100px; display: flex;}
+
+  .a { display: none; }
+
+  .anav {  width: 50%; height: auto; display: flex; flex-flow: row wrap;
+            align-items: center; justify-content:center; background: none; }
+  .anav ul { width: 100%; display: flex; justify-content: space-around; flex-flow: row wrap;}
+  .anav ul a {  display: flex; justify-content: space-around; flex-flow:  row wrap; }
+  .anav li { width: auto; display:block; padding:5px 0;}
+  .anav li:first-of-type { display: none; }
+  .anav li a {  text-decoration: none; color: #fff; font-weight: bold; flex-flow: row wrap; }
+  .anav li a:hover { color: #3fd5f0;}
+
+  .bnav { width: 150px; height: 55px; display: flex; align-items: center; cursor: pointer;
+          justify-content: center; border-radius: 50px; border: 2px solid #fff;
+          background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+  .bnav h2 {  color: #fff; font-size: 17px;}
+
+  footer {  width: 100%; height: 380px; display: flex; background-color: #020d2c;
+            margin: 0 auto; justify-content: center;}
+  footer #footerbox  {   width: 95%; height: 380px; display: flex; margin: 0 auto;
+                         flex-flow: column wrap;justify-content:center; }
+
+  footer #footerbox .flogo { width:50%; height: 140px; display: flex;  margin: 0 auto;
+                            align-items: center; justify-content: center;}
+
+  footer #footerbox .flogo img {width: 150px; height: 100px; display: flex; }
+
+  footer #footerbox .fli {  width:95%; height: 90px; display: flex; margin: 0 auto;
+                            flex-direction: column; align-items: center;  justify-content: center;}
+
+  footer #footerbox .fli ul {  width:70%;  display: flex; justify-content: center;}
+
+  footer #footerbox .fli ul li { width:100%; height: 35px; display: flex; color: #aca9b1; justify-content: center;}
+
+  footer #footerbox .fli ul li a{ color: #aca9b1; font-size: 15px;font-weight: bold;}
+
+  footer #footerbox .fli p { color:#58465d; font-size: 13px;text-align: center; }
+
+  footer #footerbox .ficon { width:250px; height: 50px; display: flex;
+                              margin: 0 auto; justify-content: space-around; align-items: center;}
+
+  footer #footerbox .ficon img{ width:30px; height: 30px;}
+
+
+}
+
+
+
+
+@media (min-width:1100px) {
+
+
+  #wrap { width: 100%;   margin: 0 auto; display: flex; flex-flow: column wrap;}
+
+  #scroll_bar {position:fixed; bottom:50px; right:50px; cursor:pointer;
+    width:50px; height:50px; background:#9233e2; border:2px solid #fff; border-radius:25px; opacity:0.5;
+    transition:all 0.3s ease-in-out;  z-index: 10; }
+    #scroll_bar i {width:100%; height:100%; font-size:1.5rem; color:#fff;
+      display:flex; justify-content:center; align-items:center;}
+    #scroll_bar:hover {opacity:1;}
+
+  header {  width: 100%; height: 160px; display: flex;
+            margin: 0 auto; justify-content: center; position: absolute; top: 0; left: 0;
+             z-index: 3; flex-direction: row; }
+  .headerbox { width: 92%; height: 160px; display: flex;flex-direction: row;
+               align-items: center;  margin: 0  auto; justify-content: space-between;}
+  #logo {  width: 150px; height: 100px; display: flex; }
+  #logo img { width: 150px; height: 100px; display: flex;}
+
+  .a {  display: none; }
+
+  .anav {  width: 60%; height: auto; display: flex; background: none;
+            flex-flow: row wrap;align-items: center; justify-content:center;}
+  .anav ul { width: 100%; display: flex; flex-direction: row; justify-content: space-around;}
+  .anav ul li:first-of-type { display: none;}
+  .anav ul a {  display: flex; flex-flow: row wrap;justify-content: space-around;}
+  .anav li { width: auto; display:block; padding:5px 0;}
+  .anav li a { flex-direction: row; text-decoration: none; color: #fff; font-weight: bold; }
+  .anav li a:hover { color: #3fd5f0;}
+
+  .bnav { width: 150px; height: 55px; display: flex; align-items: center; cursor: pointer;
+          justify-content: center; border-radius: 50px; border: 2px solid #fff;
+          background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+  .bnav h2 {  color: #fff; font-size: 17px;}
+
+  footer {  width: 100%; height: 380px; display: flex; background-color: #020d2c;
+            margin: 0 auto; justify-content: center;}
+  footer #footerbox  { width: 58%; height: 380px; display: flex; margin: 0 auto;
+                         flex-flow: column wrap;justify-content:center; }
+
+  footer #footerbox .flogo { width:50%; height: 140px; display: flex;  margin: 0 auto;
+                            align-items: center; justify-content: center;}
+
+  footer #footerbox .flogo img {width: 150px; height: 100px; display: flex; }
+
+  footer #footerbox .fli {  width:580px; height: 90px; display: flex; margin: 0 auto;
+                            flex-direction: column; align-items: center;  justify-content: center;}
+
+  footer #footerbox .fli ul {  width:70%;  display: flex; justify-content: center;}
+
+  footer #footerbox .fli ul li { width:100%; height: 35px; display: flex; color: #aca9b1; justify-content: center;}
+
+  footer #footerbox .fli ul li a{ color: #aca9b1; font-size: 15px;font-weight: bold;}
+
+  footer #footerbox .fli p { color:#58465d; font-size: 13px;text-align: center; }
+
+  footer #footerbox .ficon { width:250px; height: 50px; display: flex;
+                              margin: 0 auto; justify-content: space-around; align-items: center;}
+
+  footer #footerbox .ficon img{ width:30px; height: 30px;}
+
+
+}

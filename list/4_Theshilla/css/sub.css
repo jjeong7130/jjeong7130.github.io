@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+         #sub{width: 1500px; margin: 0 auto;  }
+
+         #submenu{width: 1500px; height:40px; float:left;  }
+         #submenu h5 { color: #5e4c35; margin:10px 0 0 425px;}
+
+         #contents{width: 1500px; height:3380px;  }
+         #contents #atextbox { width:1200px; height:160px; float: left; margin: 35px 0 0 150px; }
+         #contents #atextbox #atext1 { width:350px; height: 150px; float: left; margin: 5px 0 0 0px; }
+         #contents #atextbox #atext1 h2 { margin: 20px 0 0 0px; font-size: 35px; }
+         #contents #atextbox #atext2 { width:750px; height: 150px; float: left; margin: 5px 0 0 100px; }
+         #contents #atextbox #atext2 h4 { font-size: 15px; float: left; }
+         #contents #atextbox #atext2 p { font-size: 13px; float: left; color: #666;}
+         #contents #aphotobox { width:1200px; height:230px; float: left; margin: 5px 0 0 150px;}
+         #contents #aphotobox img{ width:1200px; height:230px; }
+
+
+         #contents #bphotobox { width:600px; height:400px;  float: left; margin:110px 0 0 150px;   }
+         #contents #bphotobox #bphoto1 { width:350px; height:390px; float: left; margin:5px 0 0 0;}
+         #contents #bphotobox #bphoto1 img { width:350px; height:390px; }
+         #contents #bphotobox .bphoto2 { width:230px; height:190px;  float: right; margin:5px 13px 2px 0px; }
+         #contents #bphotobox .bphoto2 img { width:230px; height:192px; }
+         #contents #bphotobox .bphoto2 img:hover {opacity: 0.7;}
+
+         #contents #btextbox {  width:550px; height:400px;   float: right; margin:110px 150px 0 0;  }
+         #contents #btextbox p {  font-size: 13px; color: #666;}
+         #contents #btextbox span {  color:#9d8874; }
+         #contents #btextbox table {  width:530px; height:80px; border:1px solid #eee; border-collapse: collapse; margin:20px 0 0 0px;}
+         #contents #btextbox th { background-color:#f1e3c4; }
+         #contents #btextbox th,td {  border:1px solid #c9c6c4; text-align: center; font-size: 13px;}
+
+         #contents #ctextbox {  width:550px; height:400px;   float: left; margin:110px 0 0 150px;  }
+         #contents #ctextbox p { font-size: 13px; color: #666;}
+         #contents #ctextbox p1 { font-size: 12.5px; color: #666; }
+         #contents #ctextbox span {  color:#9d8874; }
+         #contents #ctextbox #btn1 {   background-color:#bc9966;  padding:10px; opacity:0.7; border: 0; cursor: pointer;
+                                        margin: 30px 0 0 440px; transition: 0.5s ease; color:#fff; }
+         #contents #ctextbox #btn1:hover { opacity: 1;}
+
+        #contents #cphotobox { width:600px; height:400px;  float: right; margin:110px 150px 0 0; }
+        #contents #cphotobox .cphoto1 { width:230px; height:190px;  float: left; margin:5px 0px 2px 13px;}
+        #contents #cphotobox .cphoto1 img { width:230px; height:190px;}
+        #contents #cphotobox .cphoto1 img:hover {opacity: 0.7;}
+        #contents #cphotobox #cphoto2 { width:350px; height:390px;  float: right; margin:5px 0 0 0; }
+        #contents #cphotobox #cphoto2 img { width:350px; height:390px; }
+
+        #contents #dphotobox { width:600px; height:400px;  float: left; margin:110px 0 0 150px;  }
+        #contents #dphotobox #dphoto1 { width:350px; height:390px;  float: left; margin:5px 0 0 0;}
+        #contents #dphotobox #dphoto1 img { width:350px; height:390px; }
+        #contents #dphotobox .dphoto2 { width:230px; height:190px;  float: right; margin:5px 13px 2px 0px;}
+        #contents #dphotobox .dphoto2 img { width:230px; height:192px; }
+        #contents #dphotobox .dphoto2 img:hover {opacity: 0.7;}
+
+        #contents #dtextbox {  width:550px; height:400px;   float: right; margin:110px 150px 0 0; }
+        #contents #dtextbox p {font-size: 13px;color: #666; }
+        #contents #dtextbox p span {font-size: 15px; color:#9d8874; }
+        #contents #dtextbox p1 { font-size: 12.5px;color: #666;  }
+        #contents #dtextbox span1 { font-size: 12.5px; color:#9d8874;  }
+        #contents #dtextbox table {  width:530px; height:120px; border:1px solid #000; border-collapse: collapse; margin:20px 0 0 0px;}
+        #contents #dtextbox table .a { font-weight: bold; background-color:#f1e3c4; }
+
+        #contents #etextbox1 {  width:920px; height:80px;   float: right; margin:120px 150px 0 0;  }
+        #contents #etextbox1 h3 { float: right; margin:15px 0 0 0; font-size: 40px; }
+        #contents #etextbox1 p {  float: right; font-size: 14px; color:#9d8874; margin: 40px 20px 0 0px;}
+        #contents #ephotobox { float: left; width:1200px; height:400px;  margin:0px 0 0 150px; }
+        #contents #ephotobox #ephoto1 { float: left; width:330px; height:400px;  }
+        #contents #ephotobox #ephoto1 img {width:330px; height:400px; }
+        #contents #ephotobox #ephoto2  {  float: right; margin:0px;  width:860px; height:250px;  }
+        #contents #ephotobox #ephoto2 img  { width:860px; height:250px;}
+        #contents #ephotobox #ephoto2 p { font-size: 13px;margin: 10px 0 0 10px; color: #666; }
+        #contents #ephotobox #ephoto2 span { color:#9d8874;  }
+        #contents #ephotobox #ephoto2 #btn2 {   background-color:#bc9966;  padding:10px; opacity:0.7; border: 0; cursor: pointer;
+                                       margin: 33px 0 0 755px; transition: 0.5s ease; color:#fff; }
+        #contents #ephotobox #ephoto2 #btn2:hover { opacity: 1;}
+
+        #contents #ftextbox1 {  width:920px; height:80px;   float: left; margin:120px 0px 0 150px;}
+        #contents #ftextbox1 h3 { float: left; margin:15px 0 0 0px; font-size: 40px; }
+        #contents #ftextbox1 p {  float: left; font-size: 14px; margin: 40px 0 0 20px; color:#9d8874; }
+        #contents #fphotobox { float: left; width:1200px; height:400px; margin:0px 0 0 150px;  }
+        #contents #fphotobox #fphoto1 { float: right; width:330px; height:400px;  }
+        #contents #fphotobox #fphoto1 img {width:330px; height:400px; }
+        #contents #fphotobox #fphoto2  {  float: left; margin:0px;  width:860px; height:250px;  }
+        #contents #fphotobox #fphoto2 img  { width:860px; height:250px;}
+        #contents #fphotobox #fphoto2 p { font-size: 13px;margin: 10px 0 0 10px; color: #666;  }
+        #contents #fphotobox #fphoto2 span { color:#9d8874;  }
+        #contents #fphotobox #fphoto2 #btn3 {   background-color:#bc9966;  padding:10px; opacity:0.7; border: 0; cursor: pointer;
+                                       margin: 33px 0 0 10px; transition: 0.5s ease; color:#fff; }
+        #contents #fphotobox #fphoto2 #btn3:hover { opacity: 1;}

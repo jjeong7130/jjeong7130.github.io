@@ -1,0 +1,56 @@
+﻿@charset "UTF-8";
+
+/*common.css*/
+
+      html, body { margin:0; padding:0; height:100%; }
+
+       ul,li,ol {list-style:none; margin:0; padding:0;}
+
+       #wrap {width:100%; padding:0 0 50px 0px; margin:0 auto;}
+
+       header {width:100%; height:80px; margin:0 auto; }
+
+       header #box {width:1500px; height:80px;   margin:0 auto;  }
+
+       header #logo {width:70px; height:70px;   margin:15px 0 0 90px;  float:left; }
+
+       header #boxbox {width:1500px; height:100px;   margin:0 auto;   }
+
+       header #login {width:200px; height:30px;   margin:10px 0 0 0px;  float:right;}
+
+       header #login ul,ol,li { list-style:none;margin:0;padding:0;}
+
+       header #login ul { font-size:11px; }
+
+       header #login ul li { float:left; margin:0px 5px;}
+
+       header #login li a{text-decoration:none; color:#666;  }
+
+       header nav{margin-bottom:;width:100%; height:50px;  margin:0 auto; }
+
+       header nav ul {width:1000px; margin:0 auto;height:30px;}
+
+       header nav ul li { float:left; margin:20px 55px;  }
+
+       nav li { font-weight:bold; font-size:17px;  margin:0 auto;  }
+
+       nav li a { text-decoration:none;color:#000; margin:10px 0px; }
+
+       nav li a:hover { color:#86632b;}
+
+
+       footer {width:100%; height:290px;  position:absolute; top:3150; left:0; background-color:#f6f5f5; }
+
+       #footerbox {width:1500px; height:290px;  margin:0 auto; }
+
+       footer #footerlogo {width:200px; height:100px; float:left; margin:90px 10px 10px 90px;}
+
+       #footerbox .footerinfo {width:350px; height:200px; float:left; margin:45px 25px;}
+
+       #footerbox .footerinfo ul,ol,li {list-style:none; }
+
+       #footerbox .footerinfo li { margin:10px; font-size:12px; }
+
+       #footerbox .footerinfo li a {text-decoration:none;color:#000;}
+
+       #footerbox .footerinfo a:hover {color:#86632b;}

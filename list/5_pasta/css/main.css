@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+/*main.css*/
+
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+ul,ol,li {  list-style: none; margin: 0; padding: 0; }
+
+
+
+@media (max-width:599px) {
+
+
+  #slider {  width: 100%; height:800px; margin: 0 auto;
+               display: flex; background-position: center; background-size: cover;
+                align-items: center; justify-content: center; flex-direction: column;}
+  #slider .st {  font-family: 'Nanum Gothic', sans-serif;  width:480px; height: 200px;
+                 display: flex; position: relative; top: 0%; left: 0%; color: #fff; font-size: 25px;
+                   text-align: center; justify-content: center; flex-direction: column;}
+  #slider .st h2 {  font-size: 20px; font-family: 'Nanum Gothic', sans-serif;  }
+
+
+
+    #contents {  width: 100%; height:auto; margin: 0 auto;
+                 display: flex; background-color: #1b1b1b; flex-flow: column wrap;}
+    #contents .topbox {  width: 100%; height: 600px; display: flex;
+                         justify-content: center; margin-top: 50px; }
+    #contents .topbox .topbox1 { width: 97%; height: 900px;  display:flex;
+                                  align-items: center; justify-content: space-between; flex-flow: row wrap;}
+
+    #contents .topbox .topbox1 .topphoto {  width:100%; height: 350px;
+                                             background-position: center; background-size: cover;
+                                              display: flex;}
+    #contents .topbox .topbox1 .toptext {  width:100%; height: 450px;  display: flex; justify-content: center;
+                                           flex-direction: column; padding: 15px;  }
+    #contents .topbox .topbox1 .toptext h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .topbox .topbox1 .toptext p { line-height: 22px; font-size: 13.5px; color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+    #contents .topbox .topbox1 .toptext #btn1 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif;   }
+    #contents .topbox .topbox1 .toptext #btn1:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer;}
+
+    #contents .abox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                         margin-top: 400px;  }
+    #contents .abox .atbox {  width: 97%; height: 250px; display: flex; flex-direction: column;
+                        color: #fff; margin: 0 auto;  padding: 10px;}
+    #contents .abox .atbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .abox .atbox p {  line-height: 22px; color: #868585; font-size: 13.5px; color: #868585;  font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .bbox { width:97%; height: auto; display: flex; flex-flow: row wrap;
+                      margin: 70px auto; justify-content: space-between; padding: 10px;}
+
+
+    #contents .bbox .bbox1 { width:45%; height: 1000px; display: flex;
+                            flex-flow: column wrap;  }
+    #contents .bbox .bbox2 { width:45%; height: 1000px; display: flex;
+                              flex-flow: column wrap; margin-top: 150px;}
+
+    #contents .bbox .bphotobox { width:100%; height: 200px;
+                                   display: flex; background-position: center; background-size: cover; }
+    #contents .bbox .btextbox { width: 100%; height: 300px; display: flex; flex-direction: column; }
+    #contents .bbox .btextbox h1 {  font-size: 22px;color: #fff; padding: 7px; display: flex; flex-direction: column; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .bbox .btextbox span { font-size: 18px; color: gold; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .bbox .btextbox p { line-height: 18px; color:#868585; font-size: 12px; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .cbox {  width: 100%; height: 220px; display: flex; flex-direction: column;
+                         margin: 10px 0 0 0;  ; }
+    #contents .cbox .ctbox {  width: 97%; height: 250px; display: flex; flex-direction: column;
+                        color: #fff; margin: 0 auto;  padding: 10px; }
+    #contents .cbox .ctbox h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .cbox .ctbox p {line-height: 22px; font-size: 15px; color: #868585;  color: #868585; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .dbox {  width: 97%; height: 650px;  display: flex; margin: 90px auto; flex-direction: column; }
+    #contents .dphotobox {  width:100%; height: 650px; display: flex;
+                             align-items: flex-start; background-position: center; background-size: cover; }
+    #contents .dtextbox {  width:100%; height: 450px;  display: flex; flex-direction: column;
+                            color: #fff; padding: 10px;  text-align: center; margin-top: 20px;}
+    #contents .dtextbox h2 { line-height: 35px; font-size: 20px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .dtextbox p {  font-size: 18px;  color: #eee;   font-family: 'Nanum Gothic', sans-serif; }
+
+
+    #contents .ebox1 {  width: 97%; height: 650px;  display: flex; margin: 0 auto; flex-direction: column; }
+
+    #contents .etextbox { width: 97%; height: 650px;  display: flex;
+                          flex-flow: row wrap;  margin-top: 100px; }
+    #contents .etextbox .etext1 { width: 97%; height: 150px;  display: flex;
+                                    flex-direction: column; padding: 10px; }
+    #contents .etextbox .etext1 h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .etextbox .etext1  p { line-height: 22px; font-size: 15px; color: #868585;  color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .etextbox .etext2 {  width: 80%; height: 300px; display: flex; display: block;
+                                    margin: 70px 0 0 100px; flex-direction: column;  }
+      #contents .etextbox .etext2 .etextin1class { width: 90%; height: 300px; display: block;}
+      #contents .etext2 .etextin1 { position: relative; top:0; left: 0; opacity: 1; z-index: 10;}
+      #contents .etext2 .etextin2 { position: relative; top:-300px; left: 0; opacity: 0; z-index: 9;}
+      #contents .etext2 .etextin3 { position: relative; top:-600px; left: 0; opacity: 0; z-index: 8;}
+
+
+      #contents .etextbox .etext2 h1 { color: #fff; font-size: 30px; font-family: 'Nanum Gothic', sans-serif;  }
+
+      #contents .etextbox .etext2 p { line-height: 22px; font-size: 14.5px; color: #868585;font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .etextbox .etext2 #btn2 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .etextbox .etext2 #btn2:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+
+    #contents .ephotobox {  width:97%; height: 850px;  display: flex;  margin: 0 auto;
+                             justify-content:space-between; flex-direction: column; align-items: flex-end; }
+
+    #contents .emenu {  width:20%; height: 50px;  display: flex; align-items: center;
+                          justify-content: space-around; }
+    #contents .emenu .em1 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+    #contents .emenu .em1:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+    #contents .emenu .em2 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+    #contents .emenu .em2:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+    #contents .emenu .em3 {width:15px; height: 15px; background-color: red; border-radius: 100px;cursor: pointer; }
+    #contents .emenu .em3:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+
+    #contents .ephoto { width:100%; height: 600px;  display: flex; background-position: center;
+                         background-size: cover; display: block; }
+      #contents .ephotoclass {  width:100%; height: 600px;  }
+        #contents .ephoto1 {position: relative; top:0; left: 0; z-index:5; opacity: 1;}
+        #contents .ephoto2 {position: relative; top:-600px; left: 0; z-index:4; opacity: 0;}
+        #contents .ephoto3 {position: relative; top:-1200px; left: 0;z-index:3; opacity: 0;}
+
+
+
+    #contents .fbox {  width: 100%; height: auto; display: flex; flex-direction: column;
+                             margin: 700px 0 0 0;   }
+    #contents .fbox .ftextbox {  width:97%; height: auto; display: flex;
+                                   margin: 0 auto; flex-direction: column;  text-align: center;}
+
+    #contents .fbox .ftextbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .fbox .ftextbox p { line-height: 22px; font-size: 14px; color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .gbox {  width: 100%; height: 650px; display: flex; flex-direction: column;
+                             margin: 100px 0 0 0; }
+    #contents .gbox1 {  width: 97%; height: 650px; display: flex; flex-direction: column;
+                        margin: 0 auto; justify-content: space-between; }
+
+    #contents .gbox1 .gbox2 { width: 97%; height: 650px; display: flex; background-color: #222222;
+                               flex-direction: column;  align-items: center; margin: 20px auto; }
+
+    #contents .gphoto { width:100%; height: 300px;  display: flex;
+                         background-position: center; background-size: cover; }
+    #contents .gtext { width:97%; height: 250px;  display: flex;
+                        flex-direction: column; padding: 20px; margin: 60px 0 0 0px; }
+    #contents .gtext p { font-size: 23px; color: #fff;     font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .gtext #p1 { font-size: 15px;  color: #868585; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .gtext .gicon { width:100%; height: 60px; display: flex;
+                              margin: 30px 0 0 0px; justify-content: space-between; align-items: center;}
+    #contents .gtext .gicon p { font-size: 15px; }
+     #contents .gtext .gicon #p2 { color: red; font-size: 15px; cursor: pointer; }
+
+    #contents .hbox {  width: 100%; height: 280px; display: flex; flex-direction: column;
+                             margin: 1370px 0 0 0px; background-position: center;
+                             background-size: cover;  justify-content: center; }
+
+    #contents .hbox .htext {  width:97%; height: 240px; display: flex;   margin: 40px auto;
+                              justify-content: center;    align-items: center;  flex-direction: column;  text-align: center;  }
+
+    #contents  .hbox .htext  h1 { font-size: 26px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents  .hbox .htext  p { line-height: 22px; font-size: 13px; color: #fff;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .hbox .htext #btn3 {  width:130px; height: 40px; border: 3px solid red; background-color: inherit; font-size: 13px;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .hbox .htext #btn3:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+
+}
+
+@media (min-width:600px) {
+
+
+
+    #slider {  width: 100%; height:950px; margin: 0 auto;
+                 display: flex; background-position: center; background-size: cover;
+                  align-items: center; justify-content: center; flex-direction: column;}
+    #slider .st {  font-family: 'Nanum Gothic', sans-serif;  width:670px; height: 200px;
+                   display: flex; position: relative; top: 0%; left: 0%; color: #fff; font-size: 30px;
+                     text-align: center; justify-content: center; flex-direction: column;}
+    #slider .st h2 {  font-size: 23px; font-family: 'Nanum Gothic', sans-serif;  }
+
+
+
+    #contents {  width: 100%; height: auto; margin: 0 auto;
+                 display: flex; background-color: #1b1b1b; flex-flow: column wrap;}
+    #contents .topbox {  width: 92%; height: auto; display: flex;
+                         justify-content: flex-start;  }
+    #contents .topbox .topbox1 { width: 100%; height: 800px;  display:flex;
+                                  align-items: center; justify-content: space-between; flex-flow: row wrap;}
+
+    #contents .topbox .topbox1 .topphoto {  width:50%; height: 450px;
+                                             background-position: center; background-size: cover;
+                                              display: flex;}
+    #contents .topbox .topbox1 .toptext {  width:45%; height: auto;  display: flex;  justify-content: center;
+                                           flex-direction: column; padding: 15px;   }
+    #contents .topbox .topbox1 .toptext h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .topbox .topbox1 .toptext p { line-height: 22px; font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+    #contents .topbox .topbox1 .toptext #btn1 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif;   }
+    #contents .topbox .topbox1 .toptext #btn1:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer;}
+
+    #contents .abox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                         margin: 120px 0 0 0; }
+    #contents .abox .atbox {  width: 92%; height: 250px; display: flex; flex-direction: column;
+                        color: #fff; margin: 0 auto;  padding: 10px;  }
+    #contents .abox .atbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .abox .atbox p { line-height: 22px; color: #868585; font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .bbox { width:92%; height: 1200px; display: flex;
+                      margin: 70px auto; justify-content: space-between; padding: 10px;}
+
+
+    #contents .bbox .bbox1 { width:24%; height: 1000px; display: flex;
+                            flex-flow: column wrap;   }
+    #contents .bbox .bbox2 { width:24%; height: 1000px; display: flex;
+                              flex-flow: column wrap; margin-top: 150px;}
+
+    #contents .bbox .bphotobox { width:100%; height: 200px;
+                                   display: flex; background-position: center; background-size: cover; }
+    #contents .bbox .btextbox { width: 100%; height: 300px; display: flex; flex-direction: column; }
+    #contents .bbox .btextbox h1 {  font-size: 22px;color: #fff; padding: 7px; display: flex; flex-direction: column; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .bbox .btextbox span { font-size: 18px; color: gold; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .bbox .btextbox p { line-height: 18px; color:#868585; font-size: 13px; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .cbox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                         margin: 80px 0 0 0; }
+    #contents .cbox .ctbox {  width: 92%; height: 250px; display: flex; flex-direction: column;
+                        color: #fff; margin: 0 auto;  padding: 10px; }
+    #contents .cbox .ctbox h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .cbox .ctbox p { line-height: 22px; font-size: 15px; color: #868585;  color: #868585; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .dbox {  width: 92%; height: 650px;  display: flex; margin: 90px auto; }
+    #contents .dphotobox {  width:100%; height: 650px; display: flex;
+                             align-items: flex-start; background-position: center; background-size: cover; }
+    #contents .dtextbox {  width:80%; height: 450px;  display: flex; flex-direction: column;
+                            z-index: 4; position: relative; top: 10%; left: -10%;
+                            color: #fff; padding: 10px;  }
+    #contents .dtextbox h2 { line-height: 42px; font-size: 25px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .dtextbox p {  font-size: 24px;  color: #eee;   font-family: 'Nanum Gothic', sans-serif; }
+
+
+    #contents .ebox {  width: 100%; height: 650px; margin: 120px auto; display: flex;  }
+    #contents .ebox1 {  width: 92%; height: 650px;  display: flex; margin: 0 auto; }
+
+    #contents .etextbox { width: 50%; height: 650px;  display: flex;
+                          flex-flow: row wrap;  }
+    #contents .etextbox .etext1 { width: 90%; height: 150px;  display: flex;
+                                    flex-direction: column; }
+    #contents .etextbox .etext1 h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+
+    #contents .etextbox .etext1  p { line-height: 22px; font-size: 15px; color: #868585;  color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .etextbox .etext2 {  width: 80%; height: 300px; display: flex; display: block;
+                                    margin: 70px 0 0 100px; flex-direction: column;   }
+      #contents .etextbox .etext2 .etextin1class { width: 90%; height: 300px; display: block;}
+      #contents .etext2 .etextin1 { position: relative; top:0; left: 0; opacity: 1; z-index: 10;}
+      #contents .etext2 .etextin2 { position: relative; top:-300px; left: 0; opacity: 0; z-index: 9;}
+      #contents .etext2 .etextin3 { position: relative; top:-600px; left: 0; opacity: 0; z-index: 8;}
+
+
+      #contents .etextbox .etext2 h1 { color: #fff; font-size: 30px; font-family: 'Nanum Gothic', sans-serif;  }
+
+      #contents .etextbox .etext2 p { line-height: 22px; font-size: 14.5px; color: #868585;font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .etextbox .etext2 #btn2 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .etextbox .etext2 #btn2:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+
+    #contents .ephotobox {  width:50%; height: 650px;  display: flex;
+                             justify-content:space-between; flex-direction: column; align-items: flex-end;}
+
+    #contents .emenu {  width:20%; height: 50px;  display: flex; align-items: center;
+                          justify-content: space-around; }
+    #contents .emenu .em1 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+    #contents .emenu .em1:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+    #contents .emenu .em2 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+    #contents .emenu .em2:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+    #contents .emenu .em3 {width:15px; height: 15px; background-color: red; border-radius: 100px;cursor: pointer; }
+    #contents .emenu .em3:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+
+    #contents .ephoto { width:100%; height: 600px;  display: flex; background-position: center;
+                         background-size: cover; display: block; }
+      #contents .ephotoclass {  width:100%; height: 600px;}
+        #contents .ephoto1 {position: relative; top:0; left: 0; z-index:5; opacity: 1;}
+        #contents .ephoto2 {position: relative; top:-600px; left: 0; z-index:4; opacity: 0;}
+        #contents .ephoto3 {position: relative; top:-1200px; left: 0;z-index:3; opacity: 0;}
+
+
+
+    #contents .fbox {  width: 100%; height: auto; display: flex; flex-direction: column;
+                             margin: 120px 0 0 0;}
+    #contents .fbox .ftextbox {  width:61%; height: auto; display: flex;
+                                   margin: 0 auto; flex-direction: column;  text-align: center;}
+
+    #contents .fbox .ftextbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .fbox .ftextbox p { line-height: 22px; font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .gbox {  width: 100%; height: 650px; display: flex; flex-direction: column;
+                             margin: 100px 0 0 0; }
+    #contents .gbox1 {  width: 92%; height: 650px; display: flex;
+                        margin: 0 auto; justify-content: space-between; }
+
+    #contents .gbox1 .gbox2 { width: 32%; height: 650px; display: flex; background-color: #222222;
+                               flex-direction: column;  align-items: center; }
+
+    #contents .gphoto { width:100%; height: 300px;  display: flex;
+                         background-position: center; background-size: cover; }
+    #contents .gtext { width:97%; height: 250px;  display: flex;
+                        flex-direction: column; padding: 20px; margin: 60px 0 0 0px; }
+    #contents .gtext p { font-size: 21px; color: #fff;     font-family: 'Nanum Gothic', sans-serif;  }
+    #contents .gtext #p1 { font-size: 15px;  color: #868585; font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .gtext .gicon { width:100%; height: 60px; display: flex;
+                              margin: 30px 0 0 0px; justify-content: space-between; align-items: center;}
+    #contents .gtext .gicon p { font-size: 15px; }
+    #contents .gtext .gicon #p2 { color: red; font-size: 15px; cursor: pointer; }
+
+
+    #contents .hbox {  width: 100%; height: 350px; display: flex; flex-direction: column;
+                             margin: 200px 0 0 0px; background-position: center;
+                             background-size: cover;  justify-content: center; }
+
+    #contents .hbox .htext {  width:75%; height: 300px; display: flex;   margin: 0 auto;
+                            justify-content: center; align-items: center;  flex-direction: column;  text-align: center;  }
+
+    #contents  .hbox .htext  h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+    #contents  .hbox .htext  p { line-height: 22px; font-size: 14px; color: #fff;  font-family: 'Nanum Gothic', sans-serif; }
+
+    #contents .hbox .htext #btn3 {  width:130px; height: 40px; border: 3px solid red; background-color: inherit; font-size: 13px;
+                                                   color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+    #contents .hbox .htext #btn3:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+
+}
+
+@media (min-width:1100px) {
+
+
+  #slider {  width: 100%; height:950px; margin: 0 auto;
+               display: flex; background-position: center; background-size: cover;
+                align-items: center; justify-content: center; flex-direction: column;}
+  #slider .st {  font-family: 'Nanum Gothic', sans-serif; width:1150px; height: 200px;
+                 display: flex; position: relative; top: 0%; left: 0%; color: #fff; font-size: 33px;
+                   text-align: center; justify-content: center; flex-direction: column;}
+  #slider .st h2 {  font-size: 25px; font-family: 'Nanum Gothic', sans-serif; }
+
+
+
+
+
+  #contents {  width: 100%; height: 6130px; margin: 0 auto;
+               display: flex; background-color: #1b1b1b; flex-flow: column wrap;}
+  #contents .topbox {  width: 100%; height: 600px; display: flex;
+                       justify-content: flex-start; }
+  #contents .topbox .topbox1 { width: 80%; height: 800px;  display:flex;
+                                align-items: center; justify-content: space-between; flex-flow: row wrap;}
+
+  #contents .topbox .topbox1 .topphoto {  width:50%; height: 450px;
+                                           background-position: center; background-size: cover;
+                                            display: flex;}
+  #contents .topbox .topbox1 .toptext {  width:35%; height: 550px;  display: flex;  justify-content: center;
+                                         flex-direction: column; padding: 15px; }
+  #contents .topbox .topbox1 .toptext h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+  #contents .topbox .topbox1 .toptext p { font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif;
+                                           line-height: 22px;}
+  #contents .topbox .topbox1 .toptext #btn1 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                 color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif;   }
+  #contents .topbox .topbox1 .toptext #btn1:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer;}
+
+  #contents .abox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                       margin: 120px 0 0 0; }
+  #contents .abox .atbox {  width: 61%; height: 250px; display: flex; flex-direction: column;
+                      color: #fff; margin: 0 auto;  padding: 10px;}
+  #contents .abox .atbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+  #contents .abox .atbox p {  line-height: 22px; color: #868585; font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif;  }
+
+  #contents .bbox { width:61%; height: 1200px; display: flex;
+                    margin: 70px auto; justify-content: space-between; padding: 10px;}
+
+
+  #contents .bbox .bbox1 { width:24%; height: 1000px; display: flex;
+                          flex-flow: column wrap;   }
+  #contents .bbox .bbox2 { width:24%; height: 1000px; display: flex;
+                            flex-flow: column wrap; margin-top: 150px;}
+
+  #contents .bbox .bphotobox { width:100%; height: 200px;
+                                 display: flex; background-position: center; background-size: cover; }
+  #contents .bbox .btextbox { width: 100%; height: 300px; display: flex; flex-direction: column; }
+  #contents .bbox .btextbox h1 {  font-size: 22px;color: #fff; padding: 7px; display: flex; flex-direction: column; font-family: 'Nanum Gothic', sans-serif; }
+  #contents .bbox .btextbox span { font-size: 18px; color: gold; font-family: 'Nanum Gothic', sans-serif; }
+  #contents .bbox .btextbox p { line-height: 18px; color:#868585; font-size: 13px; font-family: 'Nanum Gothic', sans-serif;  }
+
+  #contents .cbox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                       margin: 80px 0 0 0; }
+  #contents .cbox .ctbox {  width: 61%; height: 250px; display: flex; flex-direction: column;
+                      color: #fff; margin: 0 auto;  padding: 10px; }
+  #contents .cbox .ctbox h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+  #contents .cbox .ctbox p {line-height: 22px; font-size: 15px; color: #868585;  color: #868585; font-family: 'Nanum Gothic', sans-serif;  }
+
+  #contents .dbox {  width: 61%; height: 650px;  display: flex; margin: 90px auto; }
+  #contents .dphotobox {  width:100%; height: 650px; display: flex;
+                           align-items: flex-start; background-position: center; background-size: cover; }
+  #contents .dtextbox {  width:65%; height: 450px;  display: flex; flex-direction: column;
+                          z-index: 4; position: relative; top: 10%; left: -10%;
+                          color: #fff; padding: 10px;  }
+  #contents .dtextbox h2 { line-height: 42px; font-size: 28px;    font-family: 'Nanum Gothic', sans-serif; }
+  #contents .dtextbox p {  font-size: 24px;  color: #eee;   font-family: 'Nanum Gothic', sans-serif; }
+
+
+  #contents .ebox {  width: 100%; height: 650px; margin: 120px auto; display: flex;  }
+  #contents .ebox1 {  width: 61%; height: 650px;  display: flex; margin: 0 auto; }
+
+  #contents .etextbox { width: 50%; height: 650px;  display: flex;
+                        flex-flow: row wrap;  }
+  #contents .etextbox .etext1 { width: 90%; height: 150px;  display: flex;
+                                  flex-direction: column; }
+  #contents .etextbox .etext1 h1 { font-size: 30px;  font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+
+  #contents .etextbox .etext1  p { line-height: 22px; font-size: 15px; color: #868585;  color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+  #contents .etextbox .etext2 {  width: 80%; height: 300px; display: flex; display: block;
+                                  margin: 70px 0 0 100px; flex-direction: column;}
+    #contents .etextbox .etext2 .etextin1class { width: 90%; height: 300px; display: block;}
+    #contents .etext2 .etextin1 { position: relative; top:0; left: 0; opacity: 1; z-index: 10;}
+    #contents .etext2 .etextin2 { position: relative; top:-300px; left: 0; opacity: 0; z-index: 9;}
+    #contents .etext2 .etextin3 { position: relative; top:-600px; left: 0; opacity: 0; z-index: 8;}
+
+
+  #contents .etextbox .etext2 h1 { color: #fff; font-size: 30px; font-family: 'Nanum Gothic', sans-serif;  }
+
+  #contents .etextbox .etext2 p { line-height: 22px; font-size: 14.5px; color: #868585;font-family: 'Nanum Gothic', sans-serif; }
+
+  #contents .etextbox .etext2 #btn2 {  width:150px; height: 50px; border: 3px solid red; background-color: inherit;
+                                                 color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+  #contents .etextbox .etext2 #btn2:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+
+  #contents .ephotobox {  width:50%; height: 650px;  display: flex;
+                           justify-content:space-between; flex-direction: column; align-items: flex-end;}
+
+  #contents .emenu {  width:20%; height: 50px;  display: flex; align-items: center;
+                        justify-content: space-around; }
+  #contents .emenu .em1 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+  #contents .emenu .em1:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+  #contents .emenu .em2 {width:15px; height: 15px; background-color: red; border-radius: 100px; cursor: pointer; }
+  #contents .emenu .em2:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+  #contents .emenu .em3 {width:15px; height: 15px; background-color: red; border-radius: 100px;cursor: pointer; }
+  #contents .emenu .em3:hover { border: 3px solid #fff; transition: 0.3s ease;}
+
+
+  #contents .ephoto { width:100%; height: 600px;  display: flex; background-position: center;
+                       background-size: cover; display: block; }
+    #contents .ephotoclass {  width:100%; height: 600px;}
+      #contents .ephoto1 { background-position: center; background-size: cover; position: relative; top:0; left: 0; z-index:5; opacity: 1;}
+      #contents .ephoto2 { background-position: center; background-size: cover; position: relative; top:-600px; left: 0; z-index:4; opacity: 0;}
+      #contents .ephoto3 { background-position: center; background-size: cover; position: relative; top:-1200px; left: 0;z-index:3; opacity: 0;}
+
+
+
+  #contents .fbox {  width: 100%; height: 250px; display: flex; flex-direction: column;
+                           margin: 120px 0 0 0;}
+  #contents .fbox .ftextbox {  width:40%; height: 250px; display: flex;
+                                 margin: 0 auto; flex-direction: column;  text-align: center;}
+
+  #contents .fbox .ftextbox h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+  #contents .fbox .ftextbox p { line-height: 22px; font-size: 15px; color: #868585;  font-family: 'Nanum Gothic', sans-serif; }
+
+  #contents .gbox {  width: 100%; height: 650px; display: flex; flex-direction: column;
+                           margin: 100px 0 0 0; }
+  #contents .gbox1 {  width: 61%; height: 650px; display: flex;
+                      margin: 0 auto; justify-content: space-between; }
+
+  #contents .gbox1 .gbox2 { width: 32%; height: 650px; display: flex; background-color: #222222;
+                             flex-direction: column;  align-items: center; }
+
+  #contents .gphoto { width:100%; height: 300px;  display: flex;
+                       background-position: center; background-size: cover; }
+  #contents .gtext { width:90%; height: 250px;  display: flex;
+                      flex-direction: column; padding: 20px; margin: 60px 0 0 0px; }
+  #contents .gtext p { font-size: 23px; color: #fff;     font-family: 'Nanum Gothic', sans-serif;  }
+  #contents .gtext #p1 { font-size: 15px;  color: #868585; font-family: 'Nanum Gothic', sans-serif; }
+  #contents .gtext .gicon { width:100%; height: 60px; display: flex;
+                            margin: 30px 0 0 0px; justify-content: space-between; align-items: center;}
+  #contents .gtext .gicon p { font-size: 15px; }
+  #contents .gtext .gicon #p2 { color: red; font-size: 15px; cursor: pointer; }
+
+
+  #contents .hbox {  width: 100%; height: 350px; display: flex; flex-direction: column;
+                           margin: 200px 0 0 0px; background-position: center;
+                           background-size: cover;  justify-content: center; }
+
+  #contents .hbox .htext { width:50%; height: 300px; display: flex;   margin: 0 auto;
+                                     align-items: center; justify-content: center;flex-direction: column;  text-align: center;  }
+
+  #contents  .hbox .htext  h1 { font-size: 30px; color: #fff; font-family: 'Nanum Gothic', sans-serif;  }
+  #contents  .hbox .htext  p { line-height: 22px; font-size: 15px; color: #fff;  font-family: 'Nanum Gothic', sans-serif; }
+
+  #contents .hbox .htext #btn3 {  width:130px; height: 40px; border: 3px solid red; background-color: inherit; font-size: 13px;
+                                                 color: #fff; margin: 30px 0px; font-family: 'Nanum Gothic', sans-serif; }
+  #contents .hbox .htext #btn3:hover {  background-color: red; transition: all 0.3s ease; cursor: pointer; }
+
+
+
+}

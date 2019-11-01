@@ -1,0 +1,998 @@
+@charset "UTF-8";
+
+/*sub.css*/
+
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+ul,ol,li {  list-style: none; margin: 0; padding: 0; }
+
+@media (max-width:599px) {
+
+  #slider {  width:100%; height: 465px;  display: flex;
+              margin: 0 auto;  background-position: center; background-size: cover;  }
+
+  #slider .st { width: 80%; height: 200px;  display: flex;  justify-content: space-around;
+                flex-flow: row wrap; align-items: center;position: relative; top: 25%; left: 0%;  }
+  #slider .st h1 { font-size: 45px;color: #fff; }
+
+  #contents {  width: 100%; height: auto; display: flex;
+              margin: 0 auto; flex-flow:column wrap; }
+
+  #contents .sabox {  width:100%; height:1000px;  display: flex; flex-flow: row wrap; }
+
+  #contents .saboxbox {  width:95%; height:1000px;  display: flex; margin: 0 auto;
+                        flex-flow: column wrap; }
+
+  #contents .saboxbox .saphoto {  width:100%; height: 500px; display: flex;
+                                 background-position: center; background-size: cover;
+                                 position: relative; top: 0; left: 0; }
+
+  #contents .saboxbox .satext1 {  width:5%; height: 120px; display: flex;
+                                position: relative; top: 2%; left:30%; z-index: 5;
+                                justify-content: center; align-items: center;}
+  #contents .saboxbox .satext1 h1 { font-size: 60px; color: #9233e2;}
+
+  #contents .saboxbox .saphoto1 {  width:45%; height: 200px; display: flex;
+                                    position: relative; top: 5%; left: 0%;
+                                     background-position: center; background-size: cover;}
+
+  #contents .saboxbox .satext2 {  width:45%; height: 250px; display: flex;
+                                position: relative; top:67%; left: -47%; flex-direction: column;
+                                justify-content: space-between; align-items: flex-end; }
+  #contents .saboxbox .satext2 p {  font-size: 15px; line-height: 23px; text-align: right;}
+
+  #contents .saboxbox .satext4 {  width: 130px; height: 35px; display: flex;
+                                justify-content: flex-end; align-items: center;
+                                 position: relative; top:10%; left:0%; }
+  #contents .saboxbox .satext4 .btn1 {  width: 100px; height: 35px; display: flex; align-items: center;
+                                      justify-content: center; border-radius: 50px;  cursor: pointer;
+                                      background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border:none; }
+
+  #contents .saboxbox .satext4 .btn1 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .saboxbox .satext4 .btn1:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .saboxbox .satext3 {  width:40%; height: 80px; display: flex; background: #9233e2;
+                                 position: relative; top:17%; left: -40%; z-index: 6;
+                                 justify-content: center; align-items: center;  }
+  #contents .saboxbox .satext3 h3 { font-size: 17px; color:#fff; }
+
+  #contents .sbbox {  width:100%; height:1350px;  display: flex;
+                      flex-flow: row nowrap;  margin: 170px auto 0px auto;
+                      background-position: center; background-size: cover; }
+
+  #contents .sbbox .sbboxbox {  width:95%; height:1000px;  display: flex; margin: 120px auto 0 auto;
+                              flex-flow: row wrap;  position:relative; }
+
+  #contents .sbboxbox .sbtext1 {  width:40%; height: 50px; display: flex;
+                                  position: relative; top:0%; left: 0%;
+                                  justify-content: flex-start;align-items: center;}
+
+  #contents .sbboxbox .sbtext1 h2 { font-size: 25px; color: #fff; }
+
+  #contents .sbboxbox .sbtext2 {  width:60%; height: 60px; display: flex;
+                                  position: relative; top:0%; left: 0%; z-index: 6;
+                                  justify-content: center; align-items: center;}
+
+  #contents .sbboxbox .sbtext2 h1 {  font-size: 43px; color: #9233e2; }
+
+  #contents .sbboxbox .sbphoto {  width:100%; height: 500px; display: flex;
+                                  position: relative; top: 0%; left: 0%;
+                                  background-position: center; background-size: cover; }
+
+
+  #contents .sbboxbox .sbphoto1 {  width:35%; height: 170px; display: flex;
+                                   position: relative; top: -3%; left: 0%;
+                                   background-position: center; background-size: cover; }
+
+  #contents .sbboxbox .sbtext3 {  width:40%; height: 340px; display: flex;
+                                   position: absolute; bottom:0%; left: 52%; z-index:10;
+                                    flex-flow: column wrap;}
+
+  #contents .sbboxbox .sbtext3 h2 { color: #fff;  }
+
+  #contents .sbboxbox .sbtext3 li {  font-size: 14px; color: #fff; line-height: 25px; }
+
+  #contents .scbox {  width:100%; height:1600px;  display: flex; flex-flow: row wrap; }
+
+  #contents .scbox .scboxbox {  width:95%; height:1600px;  display: flex; flex-flow: row wrap;
+                                margin: 0 auto; flex-flow: row wrap;  }
+
+  #contents .scboxbox .scphoto {  width:100%; height: 350px; display: flex;
+                                  background-position: center; background-size: cover;
+                                  justify-content: center; align-items: center; }
+
+  #contents .scphoto .sctext1 { width:75%; height: 250px; display: flex; border:2px solid #fff;
+                                flex-flow: column wrap; justify-content: center;}
+  #contents .scphoto .sctext1 h3 { color:#fff; font-size: 20px; text-align: center; line-height: 30px;}
+  #contents .scphoto .sctext1 p { color:#fff; font-size: 15px; text-align: center; line-height: 30px;}
+
+  #contents .scboxbox .sctext2 {  width:160px; height: 100px; display: flex;
+                                  background-position: center; background-size: contain; background-repeat: no-repeat;
+                                  position: relative; top: 0%; left: 57%;
+                                  justify-content: center; align-items: center;}
+
+  #contents .scboxbox .sctext2 h1 { font-size: 53px; color: #9233e2;}
+
+  #contents .scboxbox .scabox {  width:100%; height: 1100px; display: flex;  padding: 5px;
+                                  position: relative; top: 0%; left: 0%; justify-content: space-between;
+                                  flex-flow: row wrap;}
+
+  #contents .scabox .scabox1 {  width:48%; height: 530px; display: flex;
+                                 flex-direction: column; justify-content: space-around; }
+
+  #contents .scabox .scabox1 .scaphoto { width:100%; height: 200px; display: flex;
+                                          background-position: center; background-size: cover; }
+
+  #contents .scabox .scabox1 .scatext {  width:100%; height: 240px; display: flex;
+                                         flex-direction: column; align-items: center;
+                                         padding: 15px;text-align: center; line-height: 30px; }
+
+  #contents .scabox .scabox1 .scatext h3 {  font-size: 16px; color:#9233e2; }
+  #contents .scabox .scabox1 .scatext h4 {  font-size: 15px; }
+  #contents .scabox .scabox1 .scatext p {  font-size: 14px; }
+
+
+  #contents .sdbox {  width:100%; height: 2500px; display: flex;
+                        margin: 40px auto 0 auto; flex-direction: column; justify-content: space-around;
+                        background-position: center; background-size: cover; }
+
+  #contents .sdbox .sdboxbox {  width:95%; height: 2500px; display: flex;
+                                    flex-flow: column wrap; margin: 300px auto 0 auto;
+                                    justify-content: space-around; }
+
+  #contents .sdbox .sdboxbox1 { width:95%; height:700px; display: flex;
+                                margin: 0 auto; flex-flow: row wrap; justify-content: space-between;}
+
+  #contents .sdboxbox1 .sdtext1 { width:160px; height: 100px; display: flex;
+                                  margin-top: 50px; margin-left: 25px;justify-content: center;
+                                  background-size: contain; background-repeat: no-repeat;}
+
+  #contents .sdboxbox1 .sdtext1 h1 { font-size: 53px; color: #fff;}
+
+  #contents .sdboxbox1 .sdphoto1 {  width:100%; height: 700px; display: flex;
+                                    background-position: center; background-size: cover;}
+
+  #contents .sdboxbox1 .sdtext2 {  width:95%; height: 360px; display: flex;
+                                   position: relative; top: -60%; left: 0%;
+                                   justify-content: space-around; flex-flow: row wrap;}
+
+  #contents .sdtext2 .sdtext3box {  width:100%; height: 400px; display: flex;
+                                      justify-content: flex-start; align-items: center;}
+
+  #contents .sdtext3box .sdtext3  {  width:45%; height: 370px; display: flex;
+                                       padding: 10px; flex-direction: column; justify-content: space-between;}
+
+  #contents .sdtext3box .sdtext3 p { font-size: 15px; color: #fff;}
+
+  #contents .sdtext2 .sdbtnbox {  width: 100px; height: 35px; display: flex;
+                                    align-items: center; justify-content: center;}
+
+  #contents .sdtext2 .sdbtnbox .btn2 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                           justify-content: center; border-radius: 50px;  cursor: pointer;
+                                           background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext2 .sdbtnbox .btn2 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext2 .sdbtnbox .btn2:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+
+
+  #contents .sdbox .sdboxbox2 { width:95%; height:1000px; display: flex;
+                                  margin: 0 auto; flex-direction: column;}
+
+  #contents .sdboxbox2 .sdphoto2 { width:100%; height: 570px; display: flex;
+                                   justify-content: space-between; flex-flow: row wrap; }
+
+  #contents .sdphoto2 .sdphoto3 { width:100%; height: 240px;  display: flex;
+                                  background-position: center; background-size: cover; }
+
+  #contents .sdphoto2 .sdphoto4 { width:100%; height: 305px;  display: flex;
+                                  flex-direction: row; justify-content: space-between;
+                                  align-items: flex-end;}
+
+  #contents .sdphoto4 .sdphoto4_1 { width:48.5%; height: 292px; display: flex;
+                                       background-position: center; background-size: cover; }
+
+  #contents .sdboxbox2 .sdtext4box {  width:100%; height: 600px; display: flex;
+                                        flex-direction: column; justify-content: space-around; align-items: flex-end;}
+
+  #contents .sdtext4box .sdtext4_1 {  width:160px; height: 100px; display: flex;
+                                        margin: 0px 0 0 0px;  align-items: center; justify-content: center;
+                                        background-position: center; background-size: contain;
+                                        background-repeat: no-repeat;}
+
+  #contents .sdtext4box .sdtext4_1 h1 { font-size: 60px; color: #fff;}
+
+  #contents .sdtext4box .sdtext4_2  {  width:100%; height: 350px; display: flex;
+                                          flex-direction: column; justify-content: space-around;
+                                          align-items: flex-end; }
+
+  #contents .sdtext4_2 .sdtext4_2_1  { width:100%; height: 200px; display: flex;
+                                         padding: 20px; flex-direction: column;
+                                         justify-content: space-between; align-items: flex-end; }
+  #contents .sdtext4_2 .sdtext4_2_1 p {  font-size: 15px; color: #fff; text-align: right;}
+
+  #contents .sdtext4_2 .sdbtnbox2 {  width: 100px; height: 35px; display: flex;
+                                       align-items: center; justify-content: center; }
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                             justify-content: center; border-radius: 50px;  cursor: pointer;
+                                             background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+
+  #contents .ebox  { width:100%; height: 550px; display: flex;
+                         margin: 0 auto; background-position: center; background-size: cover;}
+
+  #contents .ebox .eboxbox  {  width:90%; height: 550px; display: flex;
+                                   margin: 0 auto; justify-content: center; flex-direction: column;}
+
+  #contents .eboxbox .etext1 { width:90%; height: 150px; display: flex; margin: 0 auto;
+                                  flex-direction: column; align-items:center; justify-content: space-around;}
+  #contents .eboxbox .etext1 h1 { color:#fff; font-size: 29px; text-align: center; }
+  #contents .eboxbox .etext1 p { color:#fff; font-size: 18px; }
+
+  #contents .eboxbox .etext2 { width:100%; height: 220px; display: flex;  margin: 40px auto; flex-direction: column;
+                                 align-items: center; justify-content: space-between; }
+
+  #contents .eboxbox .etext2 .einput { width:100%; height:120px; display: flex;
+                                          flex-direction: column; justify-content: space-between;}
+
+  #contents .eboxbox .etext2 input {  width:100%; height: 45px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 input:nth-of-type(2n)  { width:100%; height: 45px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 .btn5box { width: 150px; height: 55px; display: flex; }
+
+  #contents .eboxbox .etext2 .btn5 { width: 140px; height: 55px; display: flex; align-items: center;
+                        justify-content: center; border-radius: 50px; border: 2px solid #fff; cursor: pointer;
+                        background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+
+  #contents .eboxbox .etext2 .btn5 h2{ color: #fff; font-size: 17px; }
+
+
+  }
+
+
+
+@media (min-width:600px) {
+
+  #slider {  width:100%; height: 500px;  display: flex;
+              margin: 0 auto;  background-position: center; background-size: cover;  }
+
+  #slider .st { width: 65%; height: 200px;  display: flex;  justify-content: space-around;
+                flex-flow: row wrap; align-items: center;position: relative; top: 25%; left: 5%;  }
+  #slider .st h1 { font-size: 48px;color: #fff; }
+
+  #contents {  width: 100%; height: 5810px; display: flex;
+              margin: 0 auto; flex-flow:column wrap; }
+
+  #contents .sabox {  width:100%; height:500px;  display: flex; flex-flow: row wrap; }
+
+  #contents .saboxbox {  width:95%; height:500px;  display: flex; margin: 0 auto;
+                        flex-flow: row wrap;  }
+
+  #contents .saboxbox .saphoto {  width:60%; height: 500px; display: flex;
+                                 background-position: center; background-size: cover;
+                                 position: relative; top: 0; left: 0;}
+
+  #contents .saboxbox .satext1 {  width:5%; height: 120px; display: flex;
+                                position: relative; top: 10%; left:0%; z-index: 5;
+                                justify-content: center; align-items: center;}
+  #contents .saboxbox .satext1 h1 { font-size: 60px; color: #9233e2;}
+
+  #contents .saboxbox .saphoto1 {  width:35%; height: 200px; display: flex;
+                                    position: relative; top: 0; left: 0%;
+                                     background-position: center; background-size: cover;}
+
+  #contents .saboxbox .satext2 {  width:35%; height: 250px; display: flex;
+                                position: relative; top: -50%; left: 65%; flex-direction: column;
+                                justify-content: space-between; align-items: flex-end; }
+  #contents .saboxbox .satext2 p {  font-size: 15px; line-height: 18px; text-align: right;}
+
+  #contents .saboxbox .satext4 {  width: 130px; height: 35px; display: flex;
+                                justify-content: flex-end; align-items: center;
+                                 position: relative; top:0%; left:0%; }
+  #contents .saboxbox .satext4 .btn1 {  width: 100px; height: 35px; display: flex; align-items: center;
+                                      justify-content: center; border-radius: 50px;  cursor: pointer;
+                                      background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border:none; }
+
+  #contents .saboxbox .satext4 .btn1 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .saboxbox .satext4 .btn1:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .saboxbox .satext3 {  width:23%; height: 80px; display: flex; background: #9233e2;
+                                 position: relative; top:-16%; left: 2%; z-index: 6;
+                                 justify-content: center; align-items: center;  }
+  #contents .saboxbox .satext3 h3 { font-size: 17px; color:#fff; }
+
+  #contents .sbbox {  width:100%; height:1350px;  display: flex;
+                      flex-flow: row nowrap;  margin: 170px auto 0px auto;
+                      background-position: center; background-size: cover; }
+
+  #contents .sbbox .sbboxbox {  width:95%; height:1000px;  display: flex; margin: 120px auto 0 auto;
+                              flex-flow: row wrap;  position:relative; }
+
+  #contents .sbboxbox .sbtext1 {  width:40%; height: 50px; display: flex;
+                                  position: relative; top:0%; left: 0%;
+                                  justify-content: flex-start;align-items: center;}
+
+  #contents .sbboxbox .sbtext1 h2 { font-size: 25px; color: #fff; }
+
+  #contents .sbboxbox .sbtext2 {  width:60%; height: 60px; display: flex;
+                                  position: relative; top:0%; left: 0%; z-index: 6;
+                                  justify-content: center; align-items: center;}
+
+  #contents .sbboxbox .sbtext2 h1 {  font-size: 47px; color: #9233e2; }
+
+  #contents .sbboxbox .sbphoto {  width:100%; height: 500px; display: flex;
+                                  position: relative; top: 0%; left: 0%;
+                                  background-position: center; background-size: cover; }
+
+
+  #contents .sbboxbox .sbphoto1 {  width:27%; height: 170px; display: flex;
+                                   position: relative; top: 0%; left: 15%;
+                                   background-position: center; background-size: cover; }
+
+  #contents .sbboxbox .sbtext3 {  width:40%; height: 320px; display: flex;
+                                   position: absolute; bottom:0%; left: 55%; z-index:10;
+                                    flex-flow: column wrap;}
+
+  #contents .sbboxbox .sbtext3 h2 { color: #fff;  }
+
+  #contents .sbboxbox .sbtext3 li {  font-size: 14px; color: #fff; line-height: 25px; }
+
+
+  #contents .scbox {  width:100%; height:1100px;  display: flex; flex-flow: row wrap; }
+
+  #contents .scbox .scboxbox {  width:95%; height:1100px;  display: flex; flex-flow: row wrap;
+                                margin: 0 auto; flex-flow: row wrap; }
+
+  #contents .scboxbox .scphoto {  width:100%; height: 350px; display: flex;
+                                  background-position: center; background-size: cover;
+                                  justify-content: center; align-items: center; }
+
+  #contents .scphoto .sctext1 { width:75%; height: 250px; display: flex; border:2px solid #fff;
+                                flex-flow: column wrap; justify-content: center;}
+  #contents .scphoto .sctext1 h3 { color:#fff; font-size: 20px; text-align: center; line-height: 30px;}
+  #contents .scphoto .sctext1 p { color:#fff; font-size: 15px; text-align: center; line-height: 30px;}
+
+  #contents .scboxbox .sctext2 {  width:160px; height: 100px; display: flex;
+                                  background-position: center; background-size: contain;
+                                  background-repeat: no-repeat; position: relative; top: 0%; left: 67%;
+                                  justify-content: center; align-items: center;}
+
+  #contents .scboxbox .sctext2 h1 { font-size: 53px; color: #9233e2;}
+
+  #contents .scboxbox .scabox {  width:100%; height: 600px; display: flex;  padding: 5px;
+                                  position: relative; top: 0%; left: 0%; justify-content: space-between;}
+
+  #contents .scabox .scabox1 {  width:23%; height: 530px; display: flex;
+                                 flex-direction: column; justify-content: space-around; }
+
+  #contents .scabox .scabox1 .scaphoto { width:100%; height: 200px; display: flex;
+                                          background-position: center; background-size: cover; }
+
+  #contents .scabox .scabox1 .scatext {  width:100%; height: 240px; display: flex;
+                                         flex-direction: column; align-items: center;
+                                         padding: 15px;text-align: center; line-height: 30px; }
+
+  #contents .scabox .scabox1 .scatext h3 {  font-size: 16px; color:#9233e2; }
+  #contents .scabox .scabox1 .scatext h4 {  font-size: 15px; }
+  #contents .scabox .scabox1 .scatext p {  font-size: 14px; }
+
+  #contents .sdbox {  width:100%; height: 2200px; display: flex; margin: 40px auto 0 auto;
+                      flex-direction: column; justify-content: space-around;
+                      background-position: center; background-size: cover; }
+
+  #contents .sdbox .sdboxbox {  width:95%; height: 2200px; display: flex;
+                                flex-flow: column wrap; margin: 300px auto 0 auto;
+                                justify-content: space-around; }
+
+  #contents .sdbox .sdboxbox1 { width:95%; height:700px; display: flex; margin: 0 auto;
+                                flex-flow: row wrap; justify-content: space-between;}
+
+  #contents .sdboxbox1 .sdtext1 { width:160px; height: 100px; display: flex;
+                                  margin-top: 50px; margin-left: 25px;justify-content: center;
+                                  background-size: contain; background-repeat: no-repeat;}
+
+  #contents .sdboxbox1 .sdtext1 h1 { font-size: 53px; color: #fff;}
+
+  #contents .sdboxbox1 .sdphoto1 {  width:65%; height: 700px; display: flex;
+                                    background-position: center; background-size: cover;}
+
+  #contents .sdboxbox1 .sdtext2 {  width:75%; height: 360px; display: flex;
+                                   position: relative; top: -60%; left: 0%;
+                                   justify-content: space-around; flex-flow: row wrap;}
+
+  #contents .sdtext2 .sdtext3box {  width:100%; height: 400px; display: flex;
+                                    justify-content: flex-start; align-items: center;}
+
+  #contents .sdtext3box .sdtext3  {  width:45%; height: 370px; display: flex;
+                                     padding: 10px; flex-direction: column; justify-content: space-between;}
+
+  #contents .sdtext3box .sdtext3 p { font-size: 15px; color: #fff;}
+
+  #contents .sdtext2 .sdbtnbox {  width: 100px; height: 35px; display: flex;
+                                  align-items: center; justify-content: center;}
+
+  #contents .sdtext2 .sdbtnbox .btn2 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                         justify-content: center; border-radius: 50px;  cursor: pointer;
+                                         background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext2 .sdbtnbox .btn2 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext2 .sdbtnbox .btn2:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+
+
+  #contents .sdbox .sdboxbox2 { width:95%; height:1000px; display: flex;
+                                margin: 0 auto;  flex-direction: column;}
+
+  #contents .sdboxbox2 .sdphoto2 { width:100%; height: 600px; display: flex;
+                                     justify-content: space-between;}
+
+  #contents .sdphoto2 .sdphoto3 { width:58%; height: 600px;  display: flex;
+                                  background-position: center; background-size: cover; }
+
+  #contents .sdphoto2 .sdphoto4 { width:40%; height: 600px;  display: flex;
+                                   flex-direction: column; justify-content: space-between;}
+
+  #contents .sdphoto4 .sdphoto4_1 { width:100%; height: 292px; display: flex;
+                                     background-position: center; background-size: cover; }
+
+  #contents .sdboxbox2 .sdtext4box {  width:100%; height: 600px; display: flex;
+                                      flex-direction: column; justify-content: space-around; align-items: flex-end;}
+
+  #contents .sdtext4box .sdtext4_1 {  width:160px; height: 100px; display: flex; margin: 20px 0 0 0px;
+                                      align-items: center; justify-content: center;
+                                      background-position: center; background-size: contain;
+                                      background-repeat: no-repeat;}
+
+  #contents .sdtext4box .sdtext4_1 h1 { font-size: 60px; color: #fff;}
+
+  #contents .sdtext4box .sdtext4_2  {  width:100%; height: 320px; display: flex;
+                                        flex-direction: column; justify-content: space-around;
+                                        align-items: flex-end; }
+
+  #contents .sdtext4_2 .sdtext4_2_1  { width:100%; height: 200px; display: flex;
+                                       padding: 20px; flex-direction: column;
+                                       justify-content: space-between; align-items: flex-end; }
+  #contents .sdtext4_2 .sdtext4_2_1 p {  font-size: 15px; color: #fff; text-align: right;}
+
+  #contents .sdtext4_2 .sdbtnbox2 {  width: 100px; height: 35px; display: flex;
+                                     align-items: center; justify-content: center; }
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                           justify-content: center; border-radius: 50px;  cursor: pointer;
+                                           background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .ebox  { width:100%; height: 450px; display: flex;
+                     margin: 0 auto; background-position: center; background-size: cover;}
+
+  #contents .ebox .eboxbox  {  width:90%; height: 450px; display: flex;
+                                   margin: 0 auto; justify-content: center; flex-direction: column;}
+
+  #contents .eboxbox .etext1 { width:90%; height: 150px; display: flex; margin: 0 auto;
+                                  flex-direction: column; align-items:center; justify-content: space-around;}
+  #contents .eboxbox .etext1 h1 { color:#fff; font-size: 32px; }
+  #contents .eboxbox .etext1 p { color:#fff; font-size: 20px; }
+
+  #contents .eboxbox .etext2 { width:95%; height: 150px; display: flex;  margin: 0 auto;
+                                 align-items: center; justify-content: space-around;  }
+
+  #contents .eboxbox .etext2 .einput { width:550px; height:130px; display: flex;
+                                          flex-direction: column; justify-content: space-between;}
+
+  #contents .eboxbox .etext2 input {  width:130px; height: 45px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 input:nth-of-type(2n)  { width:410px; height: 45px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 .btn5box { width: 150px; height: 55px; display: flex; }
+
+  #contents .eboxbox .etext2 .btn5 { width: 140px; height: 55px; display: flex; align-items: center;
+                        justify-content: center; border-radius: 50px; border: 2px solid #fff; cursor: pointer;
+                        background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+
+  #contents .eboxbox .etext2 .btn5 h2{ color: #fff; font-size: 17px; }
+
+
+
+}
+
+
+
+@media (min-width:700px) {
+
+  #slider {  width:100%; height: 600px;  display: flex;
+              margin: 0 auto;  background-position: center; background-size: cover;  }
+
+  #slider .st { width: 50%; height: 200px;  display: flex;  justify-content: space-around;
+                flex-flow: row wrap; align-items: center;position: relative; top: 25%; left: 7%;  }
+  #slider .st h1 { font-size: 52px;color: #fff; }
+
+  #contents {  width: 100%; height: 4920px; display: flex;
+              margin: 0 auto; flex-flow:column wrap; }
+
+  #contents .sabox {  width:100%; height:500px;  display: flex; flex-flow: row wrap; }
+
+  #contents .saboxbox {  width:95%; height:500px;  display: flex; margin: 0 auto;
+                        flex-flow: row wrap;  }
+
+  #contents .saboxbox .saphoto {  width:60%; height: 500px; display: flex;
+                                 background-position: center; background-size: cover;
+                                 position: relative; top: 0; left: 0;}
+
+  #contents .saboxbox .satext1 {  width:5%; height: 120px; display: flex;
+                                position: relative; top: 10%; left:0%; z-index: 5;
+                                justify-content: center; align-items: center;}
+  #contents .saboxbox .satext1 h1 { font-size: 60px; color: #9233e2;}
+
+  #contents .saboxbox .saphoto1 {  width:35%; height: 200px; display: flex;
+                                    position: relative; top: 0; left: 0%;
+                                     background-position: center; background-size: cover;}
+
+  #contents .saboxbox .satext2 {  width:30%; height: 250px; display: flex;
+                                position: relative; top: -50%; left: 70%; flex-direction: column;
+                                justify-content: space-between; align-items: flex-end; }
+  #contents .saboxbox .satext2 p {  font-size: 15px; line-height: 23px; text-align: right;}
+
+  #contents .saboxbox .satext4 {  width: 130px; height: 35px; display: flex;
+                                justify-content: flex-end; align-items: center;
+                                 position: relative; top:0%; left:0%; }
+  #contents .saboxbox .satext4 .btn1 {  width: 100px; height: 35px; display: flex; align-items: center;
+                                      justify-content: center; border-radius: 50px;  cursor: pointer;
+                                      background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border:none; }
+
+  #contents .saboxbox .satext4 .btn1 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .saboxbox .satext4 .btn1:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .saboxbox .satext3 {  width:20%; height: 80px; display: flex; background: #9233e2;
+                                 position: relative; top:-16%; left: 10%; z-index: 6;
+                                 justify-content: center; align-items: center; }
+  #contents .saboxbox .satext3 h3 { font-size: 17px; color:#fff; }
+
+  #contents .sbbox {  width:100%; height:950px;  display: flex;
+                      flex-flow: row nowrap;  margin: 170px auto 0px auto;
+                      background-position: center; background-size: cover; }
+
+  #contents .sbbox .sbboxbox {  width:95%; height:500px;  display: flex; margin: 120px auto 0 auto;
+                              flex-flow: row wrap;  position:relative;}
+
+  #contents .sbboxbox .sbtext1 {  width:35%; height: 50px; display: flex;
+                                  position: relative; top:10%; left: 0%;
+                                  justify-content: flex-start;align-items: center;}
+
+  #contents .sbboxbox .sbtext1 h2 { font-size: 20px; color: #fff; }
+
+  #contents .sbboxbox .sbtext2 {  width:42%; height: 80px; display: flex;
+                                  position: relative; top:8%; left: -5%; z-index: 6;
+                                  justify-content: flex-start; align-items: center;}
+
+  #contents .sbboxbox .sbtext2 h1 {  font-size: 43px; color: #9233e2; }
+
+  #contents .sbboxbox .sbphoto {  width:55%; height: 500px; display: flex;
+                                  position: relative; top: -16%; left: 45%;
+                                  background-position: center; background-size: cover; }
+
+
+  #contents .sbboxbox .sbphoto1 {  width:17%; height: 170px; display: flex;
+                                   position: relative; top: 20%; left: -55%;
+                                   background-position: center; background-size: cover; }
+
+  #contents .sbboxbox .sbtext3 {  width:22%; height: 390px; display: flex;
+                                   position: absolute; bottom:-14%; left: 21%; z-index:10;
+                                    flex-flow: column wrap;}
+
+  #contents .sbboxbox .sbtext3 h2 { color: #fff;}
+
+  #contents .sbboxbox .sbtext3 li {  font-size: 15px; color: #fff; line-height: 25px; }
+
+
+  #contents .scbox {  width:100%; height:700px;  display: flex; flex-flow: row wrap; }
+
+  #contents .scbox .scboxbox {  width:95%; height:700px;  display: flex; flex-flow: row wrap;
+                                 margin: 0 auto; flex-flow: row wrap; }
+
+  #contents .scboxbox .scphoto {  width:25%; height: 700px; display: flex;
+                                  background-position: center; background-size: cover;
+                                  justify-content: center; align-items: center; }
+
+  #contents .scphoto .sctext1 { width:70%; height: 500px; display: flex; border:2px solid #fff;
+                                flex-flow: column wrap; justify-content: center;}
+  #contents .scphoto .sctext1 h3 { color:#fff; font-size: 18px; text-align: center; line-height: 30px;}
+  #contents .scphoto .sctext1 p { color:#fff; font-size: 14px; text-align: center; line-height: 30px;}
+
+  #contents .scboxbox .sctext2 {  width:160px; height: 100px; display: flex;
+                                  background-position: center; background-size: contain;
+                                  background-repeat: no-repeat; justify-content: center;align-items: center;
+                                   position: relative; top: 3%; left: 50%;}
+
+  #contents .scboxbox .sctext2 h1 { font-size: 52px; color: #9233e2;}
+
+  #contents .scboxbox .scabox {  width:72%; height: auto; display: flex;  padding: 5px;
+                                  position: relative; top: -81.5%; left: 28%; justify-content: space-between;
+                                  }
+
+  #contents .scabox .scabox1 {  width:23%; height: 530px; display: flex;
+                                 flex-direction: column; justify-content: space-around; }
+
+  #contents .scabox .scabox1 .scaphoto { width:100%; height: 200px; display: flex;
+                                          background-position: center; background-size: cover; }
+
+  #contents .scabox .scabox1 .scatext {  width:100%; height: 240px; display: flex;
+                                         flex-direction: column; align-items: center;
+                                         padding: 15px;text-align: center; line-height: 30px; }
+
+  #contents .scabox .scabox1 .scatext h3 {  font-size: 16px; color:#9233e2; }
+  #contents .scabox .scabox1 .scatext h4 {  font-size: 15px; }
+  #contents .scabox .scabox1 .scatext p {  font-size: 14px; }
+
+  #contents .sdbox {  width:100%; height: 2110px; display: flex;
+                      margin: 40px auto 0 auto; flex-direction: column; justify-content: space-around;
+                      background-position: center; background-size: cover; }
+
+  #contents .sdbox .sdboxbox {  width:95%; height: 1500px; display: flex;
+                                  flex-flow: column wrap; margin: 150px auto 0 auto;
+                                  justify-content: space-between; }
+
+  #contents .sdbox .sdboxbox1 { width:95%; height:700px; display: flex;
+                                margin: 0 auto; flex-flow: row wrap; justify-content: space-between;}
+
+  #contents .sdboxbox1 .sdtext1 { width:160px; height: 100px; display: flex;
+                                  margin-top: 50px; margin-left: 25px;justify-content: center;
+                                  background-size: contain; background-repeat: no-repeat;}
+
+  #contents .sdboxbox1 .sdtext1 h1 { font-size: 52px; color: #fff;}
+
+  #contents .sdboxbox1 .sdphoto1 {  width:65%; height: 700px; display: flex;
+                                    background-position: center; background-size: cover;}
+
+  #contents .sdboxbox1 .sdtext2 {  width:58%; height: 360px; display: flex;
+                                   position: relative; top: -60%; left: 0%;
+                                   justify-content: space-around; flex-flow: row wrap;}
+
+  #contents .sdtext2 .sdtext3box {  width:100%; height: 400px; display: flex;
+                                    justify-content: flex-start; align-items: center;}
+
+  #contents .sdtext3box .sdtext3  {  width:45%; height: 370px; display: flex;
+                                     padding: 20px; flex-direction: column; justify-content: space-between;}
+
+  #contents .sdtext3box .sdtext3 p { font-size: 15px; color: #fff;}
+
+  #contents .sdtext2 .sdbtnbox {  width: 100px; height: 35px; display: flex;
+                                  align-items: center; justify-content: flex-end;
+                                  margin-left: 0px; }
+
+  #contents .sdtext2 .sdbtnbox .btn2 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                         justify-content: center; border-radius: 50px;  cursor: pointer;
+                                         background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext2 .sdbtnbox .btn2 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext2 .sdbtnbox .btn2:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+
+
+  #contents .sdbox .sdboxbox2 { width:95%; height:600px; display: flex;
+                                margin: 0 auto; flex-direction: row; }
+
+  #contents .sdboxbox2 .sdphoto2 { width:65%; height: 600px; display: flex;
+                                     justify-content: space-between; }
+
+  #contents .sdphoto2 .sdphoto3 { width:58%; height: 600px;  display: flex;
+                                  background-position: center; background-size: cover; }
+
+  #contents .sdphoto2 .sdphoto4 { width:40%; height: 600px;  display: flex;
+                                   flex-direction: column; justify-content: space-between;}
+
+  #contents .sdphoto4 .sdphoto4_1 { width:100%; height: 292px; display: flex;
+                                     background-position: center; background-size: cover; }
+
+  #contents .sdboxbox2 .sdtext4box {  width:40%; height: 600px; display: flex;
+                                      flex-direction: column; justify-content: space-around; align-items: flex-end;}
+
+  #contents .sdtext4box .sdtext4_1 {  width:160px; height: 100px; display: flex;
+                                      margin: 0px 0 0 0px;  align-items: center; justify-content: center;
+                                      background-position: center; background-size: contain;
+                                      background-repeat: no-repeat;}
+
+  #contents .sdtext4box .sdtext4_1 h1 { font-size: 52px; color: #fff;}
+
+  #contents .sdtext4box .sdtext4_2  {  width:80%; height: 350px; display: flex;
+                                        flex-direction: column; justify-content: space-around;
+                                        align-items: flex-end; }
+
+  #contents .sdtext4_2 .sdtext4_2_1  { width:90%; height: 400px; display: flex;
+                                       padding: 20px; flex-direction: column;
+                                       justify-content: space-between; align-items: flex-end; }
+  #contents .sdtext4_2 .sdtext4_2_1 p {  font-size: 15px; color: #fff; text-align: right;}
+
+  #contents .sdtext4_2 .sdbtnbox2 {  width: 100px; height: 35px; display: flex;
+                                     align-items: center; justify-content: center; }
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                           justify-content: center; border-radius: 50px;  cursor: pointer;
+                                           background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .ebox  { width:100%; height: 450px; display: flex;
+                       margin: 0 auto; background-position: center; background-size: cover;}
+
+  #contents .ebox .eboxbox  {  width:90%; height: 450px; display: flex;
+                                 margin: 0 auto; justify-content: center; flex-direction: column;}
+
+  #contents .eboxbox .etext1 { width:90%; height: 150px; display: flex; margin: 0 auto;
+                                flex-direction: column; align-items:center; justify-content: space-around;}
+  #contents .eboxbox .etext1 h1 { color:#fff; font-size: 32px; }
+  #contents .eboxbox .etext1 p { color:#fff; font-size: 20px; }
+
+  #contents .eboxbox .etext2 { width:95%; height: 150px; display: flex;  margin: 0 auto;
+                               align-items: center; justify-content: space-around;  }
+
+  #contents .eboxbox .etext2 .einput { width:550px; height:130px; display: flex;
+                                        flex-direction: column; justify-content: space-between;}
+
+  #contents .eboxbox .etext2 input {  width:130px; height: 45px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 input:nth-of-type(2n)  { width:410px; height: 45px; border-radius: 10px;
+                                                      border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 .btn5box { width: 150px; height: 55px; display: flex; }
+
+  #contents .eboxbox .etext2 .btn5 { width: 140px; height: 55px; display: flex; align-items: center;
+                                     justify-content: center; border-radius: 50px; border: 2px solid #fff; cursor: pointer;
+                                     background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+
+  #contents .eboxbox .etext2 .btn5 h2{ color: #fff; font-size: 17px; }
+
+}
+
+@media (min-width:1100px) {
+
+  #slider {  width:100%; height: 600px;  display: flex;
+              margin: 0 auto;  background-position: center; background-size: cover;  }
+
+  #slider .st { width: 50%; height: 200px;  display: flex;  justify-content: space-around;
+                flex-flow: row wrap; align-items: center;position: relative; top: 25%; left: 7%;  }
+  #slider .st h1 { font-size: 55px; color: #fff; }
+
+  #contents {  width: 100%; height: 4920px; display: flex;
+              margin: 0 auto; flex-flow:column wrap; }
+
+  #contents .sabox {  width:100%; height:500px;  display: flex; flex-flow: row wrap; }
+
+  #contents .saboxbox {  width:1050px; height:500px;  display: flex; margin: 0 auto;
+                        flex-flow: row wrap;  }
+
+  #contents .saboxbox .saphoto {  width:60%; height: 500px; display: flex;
+                                 background-position: center; background-size: cover;
+                                 position: relative; top: 0; left: 0;}
+
+  #contents .saboxbox .satext1 {  width:5%; height: 120px; display: flex;
+                                position: relative; top: 10%; left:0%; z-index: 5;
+                                justify-content: center; align-items: center;}
+  #contents .saboxbox .satext1 h1 { font-size: 60px; color: #9233e2;}
+
+  #contents .saboxbox .saphoto1 {  width:35%; height: 200px; display: flex;
+                                    position: relative; top: 0; left: 0%;
+                                     background-position: center; background-size: cover;}
+
+  #contents .saboxbox .satext2 {  width:30%; height: 250px; display: flex;
+                                position: relative; top: -50%; left: 70%; flex-direction: column;
+                                justify-content: space-between; align-items: flex-end; }
+  #contents .saboxbox .satext2 p {  font-size: 15px; line-height: 23px; text-align: right;}
+
+  #contents .saboxbox .satext4 {  width: 130px; height: 35px; display: flex;
+                                justify-content: flex-end; align-items: center;
+                                 position: relative; top:0%; left:0%; }
+  #contents .saboxbox .satext4 .btn1 {  width: 100px; height: 35px; display: flex; align-items: center;
+                                      justify-content: center; border-radius: 50px;  cursor: pointer;
+                                      background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border:none; }
+
+  #contents .saboxbox .satext4 .btn1 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .saboxbox .satext4 .btn1:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .saboxbox .satext3 {  width:20%; height: 80px; display: flex; background: #9233e2;
+                                 position: relative; top:-16%; left: 10%; z-index: 6;
+                                 justify-content: center; align-items: center;  }
+  #contents .saboxbox .satext3 h3 { font-size: 17px; color:#fff; }
+
+  #contents .sbbox {  width:100%; height:950px;  display: flex;
+                      flex-flow: row nowrap;  margin: 170px auto 0px auto;
+                      background-position: center; background-size: cover; }
+
+  #contents .sbbox .sbboxbox {  width:1050px; height:500px;  display: flex; margin: 120px auto 0 auto;
+                                flex-flow: row wrap;  position:relative;}
+
+  #contents .sbboxbox .sbtext1 {  width:30%; height: 50px; display: flex;
+                                  position: relative; top:10%; left: 0%;
+                                  justify-content: flex-start;align-items: center;}
+
+  #contents .sbboxbox .sbtext1 h2 { font-size: 25px; color: #fff; }
+
+  #contents .sbboxbox .sbtext2 {  width:30%; height: 80px; display: flex;
+                                  position: relative; top:8%; left: 0%; z-index: 6;
+                                  justify-content: center; align-items: center;}
+
+  #contents .sbboxbox .sbtext2 h1 {  font-size: 50px; color: #9233e2; }
+
+  #contents .sbboxbox .sbphoto {  width:55%; height: 500px; display: flex;
+                                  position: relative; top: -16%; left: 45%;
+                                  background-position: center; background-size: cover; }
+
+
+  #contents .sbboxbox .sbphoto1 {  width:17%; height: 170px; display: flex;
+                                   position: relative; top: 20%; left: -55%;
+                                   background-position: center; background-size: cover; }
+
+  #contents .sbboxbox .sbtext3 {  width:22%; height: 320px; display: flex;
+                                   position: absolute; bottom:0%; left: 21%; z-index:10;
+                                    flex-flow: column wrap;}
+
+  #contents .sbboxbox .sbtext3 h2 { color: #fff;}
+
+  #contents .sbboxbox .sbtext3 li {  font-size: 15px; color: #fff; line-height: 25px; }
+
+
+  #contents .scbox {  width:100%; height:700px;  display: flex; flex-flow: row wrap; }
+
+  #contents .scbox .scboxbox {  width:1050px; height:700px;  display: flex; flex-flow: row wrap; margin: 0 auto;
+               flex-flow: row wrap;}
+
+  #contents .scboxbox .scphoto {  width:25%; height: 700px; display: flex;
+                                  background-position: center; background-size: cover;
+                                  justify-content: center; align-items: center; }
+
+  #contents .scphoto .sctext1 { width:70%; height: 500px; display: flex; border:2px solid #fff;
+                                flex-flow: column wrap; justify-content: center;}
+  #contents .scphoto .sctext1 h3 { color:#fff; font-size: 20px; text-align: center; line-height: 30px;}
+  #contents .scphoto .sctext1 p { color:#fff; font-size: 15px; text-align: center; line-height: 30px;}
+
+  #contents .scboxbox .sctext2 {  width:160px; height: 100px; display: flex;
+                                  background-position: center; background-size: contain; background-repeat: no-repeat;
+                                   position: relative; top:3%; left: 54%;}
+
+  #contents .scboxbox .sctext2 h1 { font-size: 60px; color: #9233e2;}
+
+  #contents .scboxbox .scabox {  width:72%; height: 560px; display: flex;  padding: 5px;
+                                  position: relative; top: -80%; left: 28%; justify-content: space-between;
+                                  }
+
+  #contents .scabox .scabox1 {  width:23%; height: 530px; display: flex;
+                                 flex-direction: column; justify-content: space-around; }
+
+  #contents .scabox .scabox1 .scaphoto { width:100%; height: 200px; display: flex;
+                                          background-position: center; background-size: cover; }
+
+  #contents .scabox .scabox1 .scatext {  width:100%; height: 240px; display: flex;
+                                         flex-direction: column; align-items: center;
+                                         padding: 15px;text-align: center; line-height: 30px; }
+
+  #contents .scabox .scabox1 .scatext h3 {  font-size: 16px; color:#9233e2; }
+  #contents .scabox .scabox1 .scatext h4 {  font-size: 15px; }
+  #contents .scabox .scabox1 .scatext p {  font-size: 14px; }
+
+  #contents .sdbox {  width:100%; height: 2110px; display: flex;
+                      margin: 40px auto 0 auto; flex-direction: column; justify-content: space-around;
+                      background-position: center; background-size: cover; }
+
+  #contents .sdbox .sdboxbox {  width:1050px; height: 1500px; display: flex;
+                                  flex-flow: column wrap; margin: 150px auto 0 auto;
+                                  justify-content: space-between; }
+
+  #contents .sdbox .sdboxbox1 { width:1050px; height:700px; display: flex;
+                                margin: 0 auto; flex-flow: row wrap; justify-content: space-between;}
+
+  #contents .sdboxbox1 .sdtext1 { width:160px; height: 100px; display: flex;
+                                  margin-top: 50px; margin-left: 25px;justify-content: center;
+                                  background-size: contain; background-repeat: no-repeat;}
+
+  #contents .sdboxbox1 .sdtext1 h1 { font-size: 60px; color: #fff;}
+
+  #contents .sdboxbox1 .sdphoto1 {  width:65%; height: 700px; display: flex;
+                                    background-position: center; background-size: cover;}
+
+  #contents .sdboxbox1 .sdtext2 {  width:58%; height: 360px; display: flex;
+                                   position: relative; top: -60%; left: 0%;
+                                   justify-content: space-around; flex-flow: row wrap;}
+
+  #contents .sdtext2 .sdtext3box {  width:100%; height: 400px; display: flex;
+                                    justify-content: flex-start; align-items: center;}
+
+  #contents .sdtext3box .sdtext3  {  width:45%; height: 370px; display: flex;
+                                     padding: 20px; flex-direction: column; justify-content: space-between;}
+
+  #contents .sdtext3box .sdtext3 p { font-size: 15px; color: #fff;}
+
+  #contents .sdtext2 .sdbtnbox {  width: 100px; height: 35px; display: flex;
+                                  align-items: center; justify-content: center;}
+
+  #contents .sdtext2 .sdbtnbox .btn2 {   width: 100px; height: 35px; display: flex; align-items: center;
+                                         justify-content: center; border-radius: 50px;  cursor: pointer;
+                                         background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext2 .sdbtnbox .btn2 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext2 .sdbtnbox .btn2:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+
+
+  #contents .sdbox .sdboxbox2 { width:1050px; height:600px; display: flex;
+                                margin: 0 auto; flex-direction: row; }
+
+  #contents .sdboxbox2 .sdphoto2 { width:65%; height: 600px; display: flex;
+                                     justify-content: space-between; }
+
+  #contents .sdphoto2 .sdphoto3 { width:58%; height: 600px;  display: flex;
+                                  background-position: center; background-size: cover; }
+
+  #contents .sdphoto2 .sdphoto4 { width:40%; height: 600px;  display: flex;
+                                   flex-direction: column; justify-content: space-between;}
+
+  #contents .sdphoto4 .sdphoto4_1 { width:100%; height: 292px; display: flex;
+                                     background-position: center; background-size: cover; }
+
+  #contents .sdboxbox2 .sdtext4box {  width:40%; height: 600px; display: flex; flex-direction: column;
+                                      justify-content: space-around; align-items: flex-end;}
+
+  #contents .sdtext4box .sdtext4_1 {  width:180px; height: 100px; display: flex; margin: 0px 0 0 0px;
+                                      align-items: center; justify-content: center;
+                                      background-position: center; background-size: contain;
+                                      background-repeat: no-repeat;}
+
+  #contents .sdtext4box .sdtext4_1 h1 { font-size: 60px; color: #fff;}
+
+  #contents .sdtext4box .sdtext4_2  {  width:80%; height: 350px; display: flex;
+                                        flex-direction: column; justify-content: space-around;
+                                        align-items: flex-end; }
+
+  #contents .sdtext4_2 .sdtext4_2_1  { width:90%; height: 400px; display: flex;
+                                        padding: 20px; flex-direction: column;
+                                        justify-content: space-between; align-items: flex-end; }
+  #contents .sdtext4_2 .sdtext4_2_1 p {  font-size: 15px; color: #fff; text-align: right;}
+
+  #contents .sdtext4_2 .sdbtnbox2 {  width: 100px; height: 35px; display: flex;
+                                     align-items: center; justify-content: center; }
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 {  width: 100px; height: 35px; display: flex; align-items: center;
+                                           justify-content: center; border-radius: 50px;  cursor: pointer;
+                                           background-image: linear-gradient(90deg, #ad01de,#42d2f0 ); border: 2px solid #fff; }
+  #contents .sdtext4_2 .sdbtnbox2 .btn3 h2 { color: #fff; font-weight: bold; font-size: 13px;}
+
+  #contents .sdtext4_2 .sdbtnbox2 .btn3:hover { background-image: linear-gradient(90deg, #150e30,#150e30 ); }
+
+  #contents .ebox  { width:100%; height: 450px; display: flex;
+                       margin: 0 auto; background-position: center; background-size: cover;}
+
+  #contents .ebox .eboxbox  {  width:1050px; height: 450px; display: flex;
+                                 margin: 0 auto; justify-content: center; flex-direction: column;}
+
+  #contents .eboxbox .etext1 { width:90%; height: 150px; display: flex; margin: 0 auto;
+                                flex-direction: column; align-items:center; justify-content: space-around;}
+  #contents .eboxbox .etext1 h1 { color:#fff; font-size: 32px; }
+  #contents .eboxbox .etext1 p { color:#fff; font-size: 20px; }
+
+  #contents .eboxbox .etext2 { width:90%; height: 150px; display: flex;  margin: 0 auto;
+                               align-items: center; justify-content: space-between;  }
+
+  #contents .eboxbox .etext2 .einput {  width:750px; height:55px; display: flex;
+                                        flex-direction: row; justify-content: space-between;}
+
+  #contents .eboxbox .etext2 input { width:220px; height: 55px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 input:nth-of-type(2n)  { width:500px; height: 55px; border-radius: 10px; border:none; padding: 15px;}
+
+  #contents .eboxbox .etext2 .btn5box { width: 150px; height: 55px; display: flex; }
+
+  #contents .eboxbox .etext2 .btn5 { width: 150px; height: 55px; display: flex; align-items: center;
+                      justify-content: center; border-radius: 50px; border: 2px solid #fff; cursor: pointer;
+                      background-image: linear-gradient(90deg, #ad01de,#42d2f0 );}
+
+  #contents .eboxbox .etext2 .btn5 h2{ color: #fff; font-size: 17px; }
+}
